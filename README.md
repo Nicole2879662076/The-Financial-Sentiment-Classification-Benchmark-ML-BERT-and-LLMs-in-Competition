@@ -7,14 +7,17 @@ Our results reveal critical insights: specialized models like FinBERT excel in-d
 
 # Baselines
 Loading pre-trained models​ involves downloading weights and configurations from repositories like Hugging Face, where models are pre-trained on massive text corpora, endowing them with fundamental language understanding. Fine-tuning with our data​ adapts these models to specific tasks (e.g., financial sentiment analysis) by continuing training on domain-specific datasets, requiring less time and data than training from scratch while typically yielding superior performance. Saving the model​ preserves the fine-tuned weights, configuration, and tokenizer locally, enabling direct inference, sharing, or deployment to production environments.<br>
-| Model Code | Model Name    | Model ID/Path                   | Source                                                                                   |
-|------------|----------------|---------------------------------|------------------------------------------------------------------------------------------|
-| mlp_tfidf  | MLP+TF-IDF     | Custom Implementation           | Traditional ML Baseline                                                                  |
-| textcnn    | TextCNN        | Custom Implementation           | CNN-based Baseline                                                                       |
-| bert       | BERT           | `bert-base-uncased`             | https://www.kaggle.com/xhlulu/huggingface-bert?select=bert-base-uncased                  |
-| roberta    | RoBERTa        | `roberta-base`                  | https://www.kaggle.com/datasets/dariussingh/huggingface-roberta                          |
-| finbert    | FinBERT        | `FinBERT-BaseVocab-Cased`       | https://www.kaggle.com/models/addarm/finbert                                             |
-| qwen2      | Qwen2          | `Qwen/Qwen2-1.5B-Instruct`      | https://www.kaggle.com/models/qwen-lm/qwen2                                              |
+<small>
+
+| Model Name    | Model Version                    | Source                                                                                   |
+|----------------|---------------------------------|------------------------------------------------------------------------------------------|
+| MLP_TF_IDF     | Custom Implementation           | Traditional ML Baseline                                                                  |
+| TextCNN        | Custom Implementation           | CNN-based Baseline                                                                       |
+| BERT           | `bert-base-uncased`             | https://www.kaggle.com/xhlulu/huggingface-bert?select=bert-base-uncased                  |
+| RoBERTa        | `roberta-base`                  | https://www.kaggle.com/datasets/dariussingh/huggingface-roberta                          |
+| FinBERT        | `FinBERT-BaseVocab-Cased`       | https://www.kaggle.com/models/addarm/finbert                                             |
+| Qwen2          | `Qwen/Qwen2-1.5B-Instruct`      | https://www.kaggle.com/models/qwen-lm/qwen2                                              |
+</small>
 
 # Datasets
 * **Dataset SAFN:** https://www.kaggle.com/datasets/ankurzing/sentiment-analysis-for-financial-news<br>
@@ -29,3 +32,12 @@ This synthetic dataset contains 3,024 records of financial news headlines center
 * **Reddit:** https://www.kaggle.com/datasets/gpreda/reddit-wallstreetsbets-posts/data<br>
 Reddit posts from subreddit WallStreetBets, downloaded from https://www.reddit.com/r/wallstreetbets/ using praw (The Python Reddit API Wrapper). WallStreetBets (r/wallstreetbets, also known as WSB), is a subreddit where participants discuss stock and option trading. It has become notable for its profane nature and allegations of users manipulating securities.<br>
 ***⭐ We randomly selected 300 records from this dataset link which maintained a balanced sample ratio and manually labeled them to obtain a high-quality Reddit dataset.***
+
+# Experiment 1 (Baseline Performance)
+
+​
+# Experiment 2 (Temporal Robustness)
+
+
+# Experiment 3 (Domain Robustness)​​
+
