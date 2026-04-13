@@ -47,7 +47,7 @@ Reddit posts from subreddit WallStreetBets, downloaded from https://www.reddit.c
 
 
 <small>
--------------------------------------------- Table 1：Baseline Performance in SAFN ---------------------------------------------
+---------------------------------------- Table 1：Baseline Performance in SAFN -----------------------------------------
   
 | Baselines | Accuracy | Macro_Precision | Macro_Recall | Macro_F1 | Macro_Specificity | Macro_AUC | Macro_AUPRC |
 |------|----------|-----------------|--------------|----------|-------------------|-----------|-------------|
@@ -61,7 +61,7 @@ Reddit posts from subreddit WallStreetBets, downloaded from https://www.reddit.c
 
 <br>
 <small>
--------------------------------------------- Table 2：Baseline Performance in SEntFiN --------------------------------------------
+---------------------------------------- Table 2：Baseline Performance in SEntFiN ----------------------------------------
   
 | Baselines | Accuracy | Macro_Precision | Macro_Recall | Macro_F1 | Macro_Specificity | Macro_AUC | Macro_AUPRC |
 |-----------|----------|-----------------|--------------|----------|-------------------|-----------|-------------|
@@ -105,7 +105,7 @@ Reddit posts from subreddit WallStreetBets, downloaded from https://www.reddit.c
 # Experiment 2 (Temporal Robustness)
 
 <small>
--------------------------------------------------- Table 3：Time Drift in SAFN ---------------------------------------------------
+---------------------------------------------- Table 3：Time Drift in SAFN -----------------------------------------------
   
 | Baselines | Accuracy | Macro_Precision | Macro_Recall | Macro_F1 | Macro_Specificity | Macro_AUC | Macro_AUPRC |
 |-----------|----------|-----------------|--------------|----------|-------------------|-----------|-------------|
@@ -125,7 +125,7 @@ Reddit posts from subreddit WallStreetBets, downloaded from https://www.reddit.c
 
 <br>
 <small>
--------------------------------------------------- Table 4：Time Drift in SEntFiN ---------------------------------------------------
+---------------------------------------------- Table 4：Time Drift in SEntFiN -----------------------------------------------
   
 | Baselines | Accuracy | Macro_Precision | Macro_Recall | Macro_F1 | Macro_Specificity | Macro_AUC | Macro_AUPRC |
 |-----------|----------|-----------------|--------------|----------|-------------------|-----------|-------------|
