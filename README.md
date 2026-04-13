@@ -27,16 +27,18 @@ Loading pre-trained models​ involves downloading weights and configurations fr
   <img src="./figures/Reddit_sentiment_distribution.png" width="21.7%">
 </div>
 
-* **Dataset SAFN:** https://www.kaggle.com/datasets/ankurzing/sentiment-analysis-for-financial-news<br>
+<br>
+
+**SAFN:** https://www.kaggle.com/datasets/ankurzing/sentiment-analysis-for-financial-news<br>
 This dataset contains the sentiments for financial news headlines from the perspective of a retail investor. Further details about the dataset can be found in: Malo, P., Sinha, A., Takala, P., Korhonen, P. and Wallenius, J. (2014): “Good debt or bad debt: Detecting semantic orientations in economic texts.” Journal of the American Society for Information Science and Technology.
 
-* **Dataset SEntFiN:** https://www.kaggle.com/datasets/ankurzing/aspect-based-sentiment-analysis-for-financial-news<br>
+**SEntFiN:** https://www.kaggle.com/datasets/ankurzing/aspect-based-sentiment-analysis-for-financial-news<br>
 This file contains 10,700+ news headlines for which we have sentiment annotations for all the financial entities that appear in the headlines. Further details about the dataset can be found in: Sinha, A., Kedas, S., Kumar, R., & Malo, P. (2022). SEntFiN 1.0: Entity‐aware sentiment analysis for financial news. Journal of the Association for Information Science and Technology.
 
-* **FNME2025:** https://www.kaggle.com/datasets/pratyushpuri/financial-news-market-events-dataset-2025<br>
+**FNME2025:** https://www.kaggle.com/datasets/pratyushpuri/financial-news-market-events-dataset-2025<br>
 This synthetic dataset contains 3,024 records of financial news headlines centered around major market events from February 2025 to August 2025. The dataset captures real-time market dynamics, sentiment analysis, and trading patterns across global financial markets, making it ideal for financial analysis, sentiment modeling, and market prediction tasks.
 
-* **Reddit:** https://www.kaggle.com/datasets/gpreda/reddit-wallstreetsbets-posts/data<br>
+**Reddit:** https://www.kaggle.com/datasets/gpreda/reddit-wallstreetsbets-posts/data<br>
 Reddit posts from subreddit WallStreetBets, downloaded from https://www.reddit.com/r/wallstreetbets/ using praw (The Python Reddit API Wrapper). WallStreetBets (r/wallstreetbets, also known as WSB), is a subreddit where participants discuss stock and option trading. It has become notable for its profane nature and allegations of users manipulating securities.<br>
 ***⭐ We randomly selected 300 records from this dataset link which maintained a balanced sample ratio and manually labeled them to obtain a high-quality Reddit dataset.***
 
@@ -70,8 +72,25 @@ Reddit posts from subreddit WallStreetBets, downloaded from https://www.reddit.c
 
 **Confusion Matrice**
 ​
+
 # Experiment 2 (Temporal Robustness)
 
+<div style="text-align: center;">
+  <img src="./figures/model_performance_comparison_SAFN_TIME.png" width="910" height="500"><br>
+  <strong style="font-size: 1.1em;">SAFN</strong>
+</div>
+
+<br>
+<div style="text-align: center;">
+  <img src="./figures/model_performance_comparison_SEntFiN_TIME.png" width="910" height="500"><br>
+  <strong style="font-size: 1.1em;">SEntFiN</strong>
+</div>
+
+<br>
+<div style="text-align: center;">
+  <img src="./figures/performance_decline_barcharts.png" width="910" height="500"><br>
+  <strong style="font-size: 1.1em;">Decline</strong>
+</div>
 
 # Experiment 3 (Domain Robustness)​​
 
