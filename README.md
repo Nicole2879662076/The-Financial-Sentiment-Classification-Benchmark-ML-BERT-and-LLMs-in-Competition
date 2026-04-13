@@ -22,9 +22,9 @@ Loading pre-trained models​ involves downloading weights and configurations fr
 # Datasets
 
 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; justify-items: center;">
-  <img src="./figures/sentiment_distribution.png" width="46.1%">
-  <img src="./figures/FNME2025_sentiment_distribution.png" width="21.8%">
-  <img src="./figures/Reddit_sentiment_distribution.png" width="21.7%">
+  <img src="./figures/sentiment_distribution.png" width="47.6%">
+  <img src="./figures/FNME2025_sentiment_distribution.png" width="22.5%">
+  <img src="./figures/Reddit_sentiment_distribution.png" width="22.4%">
 </div>
 
 <br>
