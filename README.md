@@ -22,9 +22,9 @@ Loading pre-trained models​ involves downloading weights and configurations fr
 # Datasets
 
 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; justify-items: center;">
-  <img src="./figures/sentiment_distribution.png" width="47.6%">
-  <img src="./figures/FNME2025_sentiment_distribution.png" width="22.5%">
-  <img src="./figures/Reddit_sentiment_distribution.png" width="22.4%">
+  <img src="./figures/sentiment_distribution.png" width="49%">
+  <img src="./figures/FNME2025_sentiment_distribution.png" width="23.3%">
+  <img src="./figures/Reddit_sentiment_distribution.png" width="23.1%">
 </div>
 
 <br>
@@ -58,16 +58,16 @@ Reddit posts from subreddit WallStreetBets, downloaded from https://www.reddit.c
 
 <br>
 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; justify-items: center;">
-  <img src="./figures/mlp_TFIDF_confusion_matrices.png" width="32%">
-  <img src="./figures/textCNN_confusion_matrices.png" width="32%">
-  <img src="./figures/bert_confusion_matrices.png" width="32%">
+  <img src="./figures/mlp_TFIDF_confusion_matrices.png" width="33%">
+  <img src="./figures/textCNN_confusion_matrices.png" width="33%">
+  <img src="./figures/bert_confusion_matrices.png" width="33%">
 </div>
 
 <br>
 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; justify-items: center;">
-  <img src="./figures/RoBERTa_confusion_matrices.png" width="32%">
-  <img src="./figures/FinBERT_confusion_matrices.png" width="32%">
-  <img src="./figures/qwen2_confusion_matrices.png" width="32%">
+  <img src="./figures/RoBERTa_confusion_matrices.png" width="33%">
+  <img src="./figures/FinBERT_confusion_matrices.png" width="33%">
+  <img src="./figures/qwen2_confusion_matrices.png" width="33%">
 </div>
 
 **Confusion Matrice**
