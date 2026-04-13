@@ -20,6 +20,13 @@ Loading pre-trained models​ involves downloading weights and configurations fr
 </small>
 
 # Datasets
+
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; justify-items: center;">
+  <img src="./figures/sentiment_distribution.png" width="46.1%">
+  <img src="./figures/FNME2025_sentiment_distribution.png" width="21.8%">
+  <img src="./figures/Reddit_sentiment_distribution.png" width="21.7%">
+</div>
+
 * **Dataset SAFN:** https://www.kaggle.com/datasets/ankurzing/sentiment-analysis-for-financial-news<br>
 This dataset contains the sentiments for financial news headlines from the perspective of a retail investor. Further details about the dataset can be found in: Malo, P., Sinha, A., Takala, P., Korhonen, P. and Wallenius, J. (2014): “Good debt or bad debt: Detecting semantic orientations in economic texts.” Journal of the American Society for Information Science and Technology.
 
@@ -33,8 +40,35 @@ This synthetic dataset contains 3,024 records of financial news headlines center
 Reddit posts from subreddit WallStreetBets, downloaded from https://www.reddit.com/r/wallstreetbets/ using praw (The Python Reddit API Wrapper). WallStreetBets (r/wallstreetbets, also known as WSB), is a subreddit where participants discuss stock and option trading. It has become notable for its profane nature and allegations of users manipulating securities.<br>
 ***⭐ We randomly selected 300 records from this dataset link which maintained a balanced sample ratio and manually labeled them to obtain a high-quality Reddit dataset.***
 
+
 # Experiment 1 (Baseline Performance)
 
+<div style="text-align: center;">
+  <img src="./figures/SAFN_roc_curves.png" width="910" height="500"><br>
+  <strong style="font-size: 1.1em;">SAFN ROC</strong>
+</div>
+
+<br>
+<div style="text-align: center;">
+  <img src="./figures/SEntFiN_roc_curves.png" width="910" height="500"><br>
+  <strong style="font-size: 1.1em;">SEntFiN ROC</strong>
+</div>
+
+<br>
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; justify-items: center;">
+  <img src="./figures/mlp_TFIDF_confusion_matrices.png" width="30%">
+  <img src="./figures/textCNN_confusion_matrices.png" width="30%">
+  <img src="./figures/bert_confusion_matrices.png" width="30%">
+</div>
+
+<br>
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; justify-items: center;">
+  <img src="./figures/RoBERTa_confusion_matrices.png" width="30%">
+  <img src="./figures/FinBERT_confusion_matrices.png" width="30%">
+  <img src="./figures/qwen2_confusion_matrices.png" width="30%">
+</div>
+
+**Confusion Matrice**
 ​
 # Experiment 2 (Temporal Robustness)
 
