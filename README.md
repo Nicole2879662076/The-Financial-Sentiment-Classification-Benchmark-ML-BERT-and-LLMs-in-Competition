@@ -157,14 +157,14 @@ Table 3：Time Drift in SEntFiN to FNME2025
 </small>
 
 ## Performance Degradation Across Architectures
-All models exhibit performance decline when evaluated on recent SentFiN/FNME2025 data (vs. historical SAFN/SentFiN). Traditional models (MLP+TF-IDF, TextCNN) show the most severe degradation: MLP+TF-IDF’s Macro F1 drops by 16.6% (0.612→0.506), and TextCNN by 13.6% (0.676→0.584). Pretrained models (BERT, RoBERTa, FinBERT) are more stable, with RoBERTa (4.1% drop, 0.833→0.799) and BERT (4.5% drop, 0.813→0.776) showing moderate declines. Notably, Qwen2 achieves the lowest absolute accuracy (0.437) but exhibits minimal temporal drift—its performance degradation across metrics (e.g., Macro F1, AUC) is comparable to or smaller than other models, and it even approaches or surpasses some baselines in relative stability.<br>
+All models exhibit performance decline when evaluated on recent SentFiN/FNME2025 data (vs. historical SAFN/SentFiN). Traditional models (MLP+TF-IDF, TextCNN) show the most severe degradation: MLP+TF-IDF’s Macro F1 drops by 16.6% (0.612→0.506), and TextCNN by 13.6% (0.676→0.584). Pretrained models (BERT, RoBERTa, FinBERT) are more stable, with RoBERTa (4.1% drop, 0.833→0.799) and BERT (4.5% drop, 0.813→0.776) showing moderate declines. Notably, Qwen2 achieves the lowest absolute accuracy (0.437) but exhibits minimal temporal drift—its performance degradation across metrics (e.g., Macro F1, AUC) is comparable to or smaller than other models, and it even approaches or surpasses some baselines in relative stability. This observation aligns with recent findings indicating that financial sentiment models universally suffer from temporal distribution shifts, albeit to varying degrees depending on architecture [4].<br>
 
 The severe degradation of traditional models stems from their static feature extraction, which cannot adapt to linguistic evolution. Pretrained models' stability reflects their generalized representations from large-scale pretraining, though even they show measurable drift. Qwen2's minimal drift, despite architectural mismatch, suggests that generative models may offer inherent temporal robustness, though their classification accuracy requires architectural adaptation. This highlights the need for regular retraining of static models and architectural refinement of generative models for classification tasks.<br>
 
 ## Minority Class Vulnerability to Temporal Drift
 Temporal drift disproportionately harms minority classes. For example, RoBERTa’s recall for negative sentiment (a minority class, 12.5% in SAFN) drops by 16.3% (0.86→0.72), while neutral sentiment (majority) declines by only 4.8%. This pattern holds across models: minority classes consistently suffer larger performance losses due to their underrepresentation in historical training data.<br>
 
-The compounded effect of initial class imbalance and linguistic shift creates a double disadvantage for minority classes. Limited training samples result in weak representations, which are further challenged by evolving language patterns. This necessitates specific strategies such as dynamic oversampling, contrastive learning, or targeted data augmentation to maintain minority class performance in temporal deployment scenarios.<br>
+The compounded effect of class imbalance and temporal linguistic shifts imposes a dual disadvantage on minority classes. Sparse training samples yield insufficient representations, which are further compromised by evolving language patterns. This persistent pattern—minority classes consistently incur greater performance losses—aligns with empirical findings that bearish sentiment, as a minority category, is disproportionately susceptible to temporal drift in financial domains [5]. To preserve performance for underrepresented classes in evolving contexts, strategies such as dynamic oversampling, contrastive learning, or targeted data augmentation warrant further investigation.<br>
 
 <br>
 <div style="text-align: center;">
@@ -178,11 +178,16 @@ The compounded effect of initial class imbalance and linguistic shift creates a 
   <strong style="font-size: 1.1em;">SEntFiN to FNME2025</strong>
 </div>
 
-<br>
+<!-- <br>
 <div style="text-align: center;">
   <img src="./figures/performance_decline_barcharts.png" width="900" height="500"><br>
   <strong style="font-size: 1.1em;">Decline in FNME2025</strong>
-</div>
+</div> -->
+
+
+[4] Guo, Y., Hu, C., & Yang, Y. (2023, December). Predict the future from the past? on the temporal data distribution shift in financial sentiment classifications. In Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing (pp. 1029-1038).
+
+[5] Wallat, J., Abdallah, A., Jatowt, A., & Anand, A. (2025, July). A study into investigating temporal robustness of llms. In Findings of the Association for Computational Linguistics: ACL 2025 (pp. 15685-15705).
 
 # Experiment 3 (Domain Robustness)​​
 
