@@ -195,8 +195,8 @@ The compounded effect of class imbalance and temporal linguistic shifts imposes 
 # Experiment 3 (Domain Robustness)​
 ​
 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; justify-items: center;">
-  <img src="./figures/__results___7_0.png" width="49%">
-  <img src="./figures/__results___7_1.png" width="49%">
+  <img src="./figures/__results___7_0.png" width="49.5%">
+  <img src="./figures/__results___7_1.png" width="49.5%">
 </div>
 
 **tSNE in Title & Body in Reddit**
