@@ -22,9 +22,9 @@ Loading pre-trained models​ involves downloading weights and configurations fr
 # Datasets
 
 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; justify-items: center;">
-  <img src="./figures/sentiment_distribution.png" width="50%">
-  <img src="./figures/FNME2025_sentiment_distribution.png" width="23.7%">
-  <img src="./figures/Reddit_sentiment_distribution.png" width="23.6%">
+  <img src="./figures/sentiment_distribution.png" width="50.8%">
+  <img src="./figures/FNME2025_sentiment_distribution.png" width="24.1%">
+  <img src="./figures/Reddit_sentiment_distribution.png" width="24%">
 </div>
 
 <br>
@@ -79,13 +79,13 @@ Evaluation of generalization capability shows a similar trend. The AUPRC metric 
 
 <br>
 <div style="text-align: center;">
-  <img src="./figures/SAFN_roc_curves.png" width="902" height="500"><br>
+  <img src="./figures/SAFN_roc_curves.png" width="900" height="500"><br>
   <strong style="font-size: 1.1em;">SAFN ROC</strong>
 </div>
 
 <br>
 <div style="text-align: center;">
-  <img src="./figures/SEntFiN_roc_curves.png" width="902" height="500"><br>
+  <img src="./figures/SEntFiN_roc_curves.png" width="900" height="500"><br>
   <strong style="font-size: 1.1em;">SEntFiN ROC</strong>
 </div>
 
@@ -156,19 +156,19 @@ Table 3：Time Drift in SEntFiN
 
 <br>
 <div style="text-align: center;">
-  <img src="./figures/model_performance_comparison_SAFN_TIME.png" width="902" height="500"><br>
+  <img src="./figures/model_performance_comparison_SAFN_TIME.png" width="900" height="500"><br>
   <strong style="font-size: 1.1em;">SAFN</strong>
 </div>
 
 <br>
 <div style="text-align: center;">
-  <img src="./figures/model_performance_comparison_SEntFiN_TIME.png" width="902" height="500"><br>
+  <img src="./figures/model_performance_comparison_SEntFiN_TIME.png" width="900" height="500"><br>
   <strong style="font-size: 1.1em;">SEntFiN</strong>
 </div>
 
 <br>
 <div style="text-align: center;">
-  <img src="./figures/performance_decline_barcharts.png" width="902" height="500"><br>
+  <img src="./figures/performance_decline_barcharts.png" width="900" height="500"><br>
   <strong style="font-size: 1.1em;">Decline</strong>
 </div>
 
