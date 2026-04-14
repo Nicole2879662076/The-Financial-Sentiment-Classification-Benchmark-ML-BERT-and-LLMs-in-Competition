@@ -115,8 +115,10 @@ Evaluation of generalization capability shows a similar trend. The AUPRC metric 
 
 # Experiment 2 (Temporal Robustness)
 
+Experiment 2 (Temporal Robustness) evaluates models trained on historical data (SAFN) on a recent news corpus (SentFiN) whose data from 2014 and before to measure performance drift resulting from the evolution of market language from 2025 (FNME2025). The experimental design simulates a real-world deployment scenario where models must maintain predictive accuracy despite temporal shifts in linguistic patterns and sentiment expression.
+
 <small>
-Table 2：Time Drift in SAFN
+Table 2：Time Drift in SAFN to FNME2025
   
 | Baselines | Accuracy | Macro_Precision | Macro_Recall | Macro_F1 | Macro_Specificity | Macro_AUC | Macro_AUPRC |
 |-----------|----------|-----------------|--------------|----------|-------------------|-----------|-------------|
@@ -136,7 +138,7 @@ Table 2：Time Drift in SAFN
 
 <br>
 <small>
-Table 3：Time Drift in SEntFiN
+Table 3：Time Drift in SEntFiN to FNME2025
   
 | Baselines | Accuracy | Macro_Precision | Macro_Recall | Macro_F1 | Macro_Specificity | Macro_AUC | Macro_AUPRC |
 |-----------|----------|-----------------|--------------|----------|-------------------|-----------|-------------|
@@ -154,22 +156,32 @@ Table 3：Time Drift in SEntFiN
 |    **->** | **0.3279** | **0.3265** | **0.3286** | **0.3066** | **0.6643** | **0.5019** | **0.3328** |
 </small>
 
+## Performance Degradation Across Architectures
+All models exhibit performance decline when evaluated on recent SentFiN/FNME2025 data (vs. historical SAFN/SentFiN). Traditional models (MLP+TF-IDF, TextCNN) show the most severe degradation: MLP+TF-IDF’s Macro F1 drops by 16.6% (0.612→0.506), and TextCNN by 13.6% (0.676→0.584). Pretrained models (BERT, RoBERTa, FinBERT) are more stable, with RoBERTa (4.1% drop, 0.833→0.799) and BERT (4.5% drop, 0.813→0.776) showing moderate declines. Notably, Qwen2 achieves the lowest absolute accuracy (0.437) but exhibits minimal temporal drift—its performance degradation across metrics (e.g., Macro F1, AUC) is comparable to or smaller than other models, and it even approaches or surpasses some baselines in relative stability.<br>
+
+The severe degradation of traditional models stems from their static feature extraction, which cannot adapt to linguistic evolution. Pretrained models' stability reflects their generalized representations from large-scale pretraining, though even they show measurable drift. Qwen2's minimal drift, despite architectural mismatch, suggests that generative models may offer inherent temporal robustness, though their classification accuracy requires architectural adaptation. This highlights the need for regular retraining of static models and architectural refinement of generative models for classification tasks.<br>
+
+## Minority Class Vulnerability to Temporal Drift
+Temporal drift disproportionately harms minority classes. For example, RoBERTa’s recall for negative sentiment (a minority class, 12.5% in SAFN) drops by 16.3% (0.86→0.72), while neutral sentiment (majority) declines by only 4.8%. This pattern holds across models: minority classes consistently suffer larger performance losses due to their underrepresentation in historical training data.<br>
+
+The compounded effect of initial class imbalance and linguistic shift creates a double disadvantage for minority classes. Limited training samples result in weak representations, which are further challenged by evolving language patterns. This necessitates specific strategies such as dynamic oversampling, contrastive learning, or targeted data augmentation to maintain minority class performance in temporal deployment scenarios.<br>
+
 <br>
 <div style="text-align: center;">
   <img src="./figures/model_performance_comparison_SAFN_TIME.png" width="900" height="500"><br>
-  <strong style="font-size: 1.1em;">SAFN</strong>
+  <strong style="font-size: 1.1em;">SAFN to FNME2025</strong>
 </div>
 
 <br>
 <div style="text-align: center;">
   <img src="./figures/model_performance_comparison_SEntFiN_TIME.png" width="900" height="500"><br>
-  <strong style="font-size: 1.1em;">SEntFiN</strong>
+  <strong style="font-size: 1.1em;">SEntFiN to FNME2025</strong>
 </div>
 
 <br>
 <div style="text-align: center;">
   <img src="./figures/performance_decline_barcharts.png" width="900" height="500"><br>
-  <strong style="font-size: 1.1em;">Decline</strong>
+  <strong style="font-size: 1.1em;">Decline in FNME2025</strong>
 </div>
 
 # Experiment 3 (Domain Robustness)​​
