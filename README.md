@@ -194,28 +194,35 @@ The compounded effect of class imbalance and temporal linguistic shifts imposes 
 
 # Experiment 3 (Domain Robustness)​
 ​
-<br>
-<div style="text-align: center;">
-  <img src="./figures/SAFNtitle_roc_curves.png" width="900" height="500"><br>
-  <strong style="font-size: 1.1em;">SAFN ROC</strong>
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; justify-items: center;">
+  <img src="./figures/__results___7_0.png" width="44%">
+  <img src="./figures/__results___7_1.png" width="44%">
 </div>
 
-<br>
-<div style="text-align: center;">
-  <img src="./figures/SAFNboday_roc_curves.png" width="900" height="500"><br>
-  <strong style="font-size: 1.1em;">SAFN ROC</strong>
-</div>
+**tSNE in Title & Body in Reddit**
 
 <br>
 <div style="text-align: center;">
   <img src="./figures/SAFNtitle_roc_curves.png" width="900" height="500"><br>
-  <strong style="font-size: 1.1em;">SEntFiN ROC</strong>
+  <strong style="font-size: 1.1em;">SAFN to Reddit Title ROC</strong>
 </div>
 
 <br>
 <div style="text-align: center;">
-  <img src="./figures/SAFNboday_roc_curves.png" width="900" height="500"><br>
-  <strong style="font-size: 1.1em;">SEntFiN ROC</strong>
+  <img src="./figures/SAFNbody_roc_curves.png" width="900" height="500"><br>
+  <strong style="font-size: 1.1em;">SAFN to Reddit Body ROC</strong>
+</div>
+
+<br>
+<div style="text-align: center;">
+  <img src="./figures/SAFNtitle_roc_curves.png" width="900" height="500"><br>
+  <strong style="font-size: 1.1em;">SEntFiN to Reddit Title ROC</strong>
+</div>
+
+<br>
+<div style="text-align: center;">
+  <img src="./figures/SAFNbody_roc_curves.png" width="900" height="500"><br>
+  <strong style="font-size: 1.1em;">SEntFiN to Reddit Body ROC</strong>
 </div>
 
 <br>
@@ -231,4 +238,41 @@ The compounded effect of class imbalance and temporal linguistic shifts imposes 
 </div>
 
 
+<br>
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; justify-items: center;">
+  <img src="./figures/SAFNroc_comparisons/mlp_tfidf_title_vs_body_roc.png" width="32.74%">
+  <img src="./figures/SAFNroc_comparisons/textcnn_title_vs_body_roc.png" width="32.74%">
+  <img src="./figures/SAFNroc_comparisons/bert_title_vs_body_roc.png" width="32.74%">
+</div>
+
+<br>
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; justify-items: center;">
+  <img src="./figures/SAFNroc_comparisons/roberta_title_vs_body_roc.png" width="32.74%">
+  <img src="./figures/SAFNroc_comparisons/finbert_title_vs_body_roc.png" width="32.74%">
+  <img src="./figures/SAFNroc_comparisons/qwen2_title_vs_body_roc.png" width="32.74%">
+</div>
+
+**SAFN: Title & Body in Reddit**
+
+<br>
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; justify-items: center;">
+  <img src="./figures/SEntFiNroc_comparisons/mlp_tfidf_title_vs_body_roc.png" width="32.74%">
+  <img src="./figures/SEntFiNroc_comparisons/textcnn_title_vs_body_roc.png" width="32.74%">
+  <img src="./figures/SEntFiNroc_comparisons/bert_title_vs_body_roc.png" width="32.74%">
+</div>
+
+<br>
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; justify-items: center;">
+  <img src="./figures/SEntFiNroc_comparisons/roberta_title_vs_body_roc.png" width="32.74%">
+  <img src="./figures/SEntFiNroc_comparisons/finbert_title_vs_body_roc.png" width="32.74%">
+  <img src="./figures/SEntFiNroc_comparisons/qwen2_title_vs_body_roc.png" width="32.74%">
+</div>
+
+**SEntFiN: Title & Body in Reddit**
+
+<br>
+<div style="text-align: center;">
+  <img src="./figures/all_models_radar_grid.png" width="900" height="600"><br>
+  <strong style="font-size: 1.1em;">All Test Data</strong>
+</div>
 
