@@ -91,16 +91,16 @@ Evaluation of generalization capability shows a similar trend. The AUPRC metric 
 
 <br>
 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; justify-items: center;">
-  <img src="./figures/mlp_TFIDF_confusion_matrices.png" width="32.7%">
-  <img src="./figures/textCNN_confusion_matrices.png" width="32.7%">
-  <img src="./figures/bert_confusion_matrices.png" width="32.7%">
+  <img src="./figures/mlp_TFIDF_confusion_matrices.png" width="32.74%">
+  <img src="./figures/textCNN_confusion_matrices.png" width="32.74%">
+  <img src="./figures/bert_confusion_matrices.png" width="32.74%">
 </div>
 
 <br>
 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; justify-items: center;">
-  <img src="./figures/RoBERTa_confusion_matrices.png" width="32.7%">
-  <img src="./figures/FinBERT_confusion_matrices.png" width="32.7%">
-  <img src="./figures/qwen2_confusion_matrices.png" width="32.7%">
+  <img src="./figures/RoBERTa_confusion_matrices.png" width="32.74%">
+  <img src="./figures/FinBERT_confusion_matrices.png" width="32.74%">
+  <img src="./figures/qwen2_confusion_matrices.png" width="32.74%">
 </div>
 
 **Confusion Matrice**
