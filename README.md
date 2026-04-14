@@ -106,10 +106,11 @@ Evaluation of generalization capability shows a similar trend. The AUPRC metric 
 **Confusion Matrice**
 ​
 
+<br>
 [1] Devlin, J., Chang, M. W., Lee, K., & Toutanova, K. (2019, June). Bert: Pre-training of deep bidirectional transformers for language understanding. In Proceedings of the 2019 conference of the North American chapter of the association for computational linguistics: human language technologies, volume 1 (long and short papers) (pp. 4171-4186).
-
+<br>
 [2] Raffel, C., Shazeer, N., Roberts, A., Lee, K., Narang, S., Matena, M., ... & Liu, P. J. (2020). Exploring the limits of transfer learning with a unified text-to-text transformer. Journal of machine learning research, 21(140), 1-67.
-
+<br>
 [3] He, H., & Garcia, E. A. (2009). Learning from imbalanced data. IEEE Transactions on knowledge and data engineering, 21(9), 1263-1284.
 
 
@@ -185,9 +186,12 @@ The compounded effect of class imbalance and temporal linguistic shifts imposes 
 </div> -->
 
 
+<br>
 [4] Guo, Y., Hu, C., & Yang, Y. (2023, December). Predict the future from the past? on the temporal data distribution shift in financial sentiment classifications. In Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing (pp. 1029-1038).
-
+<br>
 [5] Wallat, J., Abdallah, A., Jatowt, A., & Anand, A. (2025, July). A study into investigating temporal robustness of llms. In Findings of the Association for Computational Linguistics: ACL 2025 (pp. 15685-15705).
 
-# Experiment 3 (Domain Robustness)​​
+
+# Experiment 3 (Domain Robustness)​
+​
 
