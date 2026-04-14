@@ -79,13 +79,13 @@ Evaluation of generalization capability shows a similar trend. The AUPRC metric 
 
 <br>
 <div style="text-align: center;">
-  <img src="./figures/SAFN_roc_curves.png" width="910" height="500"><br>
+  <img src="./figures/SAFN_roc_curves.png" width="907" height="500"><br>
   <strong style="font-size: 1.1em;">SAFN ROC</strong>
 </div>
 
 <br>
 <div style="text-align: center;">
-  <img src="./figures/SEntFiN_roc_curves.png" width="910" height="500"><br>
+  <img src="./figures/SEntFiN_roc_curves.png" width="907" height="500"><br>
   <strong style="font-size: 1.1em;">SEntFiN ROC</strong>
 </div>
 
