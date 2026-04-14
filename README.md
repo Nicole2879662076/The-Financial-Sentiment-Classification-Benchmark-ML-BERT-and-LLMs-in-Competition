@@ -22,9 +22,9 @@ Loading pre-trained models​ involves downloading weights and configurations fr
 # Datasets
 
 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; justify-items: center;">
-  <img src="./figures/sentiment_distribution.png" width="49%">
-  <img src="./figures/FNME2025_sentiment_distribution.png" width="23.3%">
-  <img src="./figures/Reddit_sentiment_distribution.png" width="23.1%">
+  <img src="./figures/sentiment_distribution.png" width="50%">
+  <img src="./figures/FNME2025_sentiment_distribution.png" width="23.7%">
+  <img src="./figures/Reddit_sentiment_distribution.png" width="23.6%">
 </div>
 
 <br>
@@ -116,7 +116,7 @@ Evaluation of generalization capability shows a similar trend. The AUPRC metric 
 # Experiment 2 (Temporal Robustness)
 
 <small>
----------------------------------------------- Table 3：Time Drift in SAFN -----------------------------------------------
+Table 2：Time Drift in SAFN
   
 | Baselines | Accuracy | Macro_Precision | Macro_Recall | Macro_F1 | Macro_Specificity | Macro_AUC | Macro_AUPRC |
 |-----------|----------|-----------------|--------------|----------|-------------------|-----------|-------------|
@@ -136,7 +136,7 @@ Evaluation of generalization capability shows a similar trend. The AUPRC metric 
 
 <br>
 <small>
----------------------------------------------- Table 4：Time Drift in SEntFiN -----------------------------------------------
+Table 3：Time Drift in SEntFiN
   
 | Baselines | Accuracy | Macro_Precision | Macro_Recall | Macro_F1 | Macro_Specificity | Macro_AUC | Macro_AUPRC |
 |-----------|----------|-----------------|--------------|----------|-------------------|-----------|-------------|
@@ -156,13 +156,13 @@ Evaluation of generalization capability shows a similar trend. The AUPRC metric 
 
 <br>
 <div style="text-align: center;">
-  <img src="./figures/model_performance_comparison_SAFN_TIME.png" width="910" height="500"><br>
+  <img src="./figures/model_performance_comparison_SAFN_TIME.png" width="907" height="500"><br>
   <strong style="font-size: 1.1em;">SAFN</strong>
 </div>
 
 <br>
 <div style="text-align: center;">
-  <img src="./figures/model_performance_comparison_SEntFiN_TIME.png" width="910" height="500"><br>
+  <img src="./figures/model_performance_comparison_SEntFiN_TIME.png" width="907" height="500"><br>
   <strong style="font-size: 1.1em;">SEntFiN</strong>
 </div>
 
