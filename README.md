@@ -194,4 +194,41 @@ The compounded effect of class imbalance and temporal linguistic shifts imposes 
 
 # Experiment 3 (Domain Robustness)​
 ​
+<br>
+<div style="text-align: center;">
+  <img src="./figures/SAFNtitle_roc_curves.png" width="900" height="500"><br>
+  <strong style="font-size: 1.1em;">SAFN ROC</strong>
+</div>
+
+<br>
+<div style="text-align: center;">
+  <img src="./figures/SAFNboday_roc_curves.png" width="900" height="500"><br>
+  <strong style="font-size: 1.1em;">SAFN ROC</strong>
+</div>
+
+<br>
+<div style="text-align: center;">
+  <img src="./figures/SAFNtitle_roc_curves.png" width="900" height="500"><br>
+  <strong style="font-size: 1.1em;">SEntFiN ROC</strong>
+</div>
+
+<br>
+<div style="text-align: center;">
+  <img src="./figures/SAFNboday_roc_curves.png" width="900" height="500"><br>
+  <strong style="font-size: 1.1em;">SEntFiN ROC</strong>
+</div>
+
+<br>
+<div style="text-align: center;">
+  <img src="./figures/model_performance_comparison_SAFN_TB.png" width="900" height="500"><br>
+  <strong style="font-size: 1.1em;">SAFN to Reddit</strong>
+</div>
+
+<br>
+<div style="text-align: center;">
+  <img src="./figures/model_performance_comparison_SEntFiN_TB.png" width="900" height="500"><br>
+  <strong style="font-size: 1.1em;">SEntFiN to Reddit</strong>
+</div>
+
+
 
